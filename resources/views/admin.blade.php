@@ -66,10 +66,12 @@
             </table>
         </div>
         {!!   Form::open(array('url' => 'generate')) !!}
-            {!! Form::label('min', 'Minimum number of teams: ') !!}
+            {!! Form::label('min', 'Minimum number of students per team: ') !!}
             {!! Form::text('min', null, ['class' => 'form-control']) !!}
-            {!! Form::label('max', 'Maximum number of teams: ') !!}
+            {!! Form::label('max', 'Maximum number of students per team: ') !!}
             {!! Form::text('max', null, ['class' => 'form-control']) !!}
+            {!! Form::label('competition','Name of Competition: ') !!}
+            {!! Form::text('competitionName', null, ['class' => 'form-control']) !!}
             {!! Form::submit('Update',['class' => 'form-control']) !!}
         {!! Form::close() !!}
 

@@ -55,6 +55,7 @@ class StudentController extends Controller
         //DB::table('team_contents')->truncate();
         $min = $request->get('min');
         $max = $request->get('max');
+        $compName = $request->get('competitionName');
         $students_p = student_preferences::all();
         $students_c = student_classes::all();
         $std_j = array();
